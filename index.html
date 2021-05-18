@@ -9,15 +9,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Michael André's Portfolio Website</title>
+        <!--Normalize is used to make this website look the same across all browsers. Basically what it does is to even out all the differences this website can have on all the different browsers there is.-->
         <link rel="Stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <!--Font awesome is used here to make the icons on this website look better across all devices.-->
         <link rel="Stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/kvc=" crossorigin="anonymous" />
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/kvc=" crossorigin="anonymous" /> <!--The anonymous tag on the crossorigin element means that there will be no exchange of user credentials via cookies.-->
     </head>
     <body>
         <header>
-            <!--The logo is going to hopefully be an image of me or something. I left this as a div just in case I would later make it an SVG type of image. SVG means Scalable Vector Graphics.-->
+            <!--The logo is going to hopefully be an image of my own organisation or something. I left this as a div just in case I would later make it an SVG type of image. SVG means Scalable Vector Graphics.-->
             <div class="logo">  <!--I use class for styling through the whole code for my portfolio website.-->
                 <img src="images/Michael.png" alt=""> <!--The alt tag can be left empty, but it is critical to include, or else the image will not show correctly.-->
             </div>
@@ -30,8 +32,8 @@
                     <!--These are all navigation tools that are used to easily navigate my portfolio website.-->
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,25 +54,25 @@
                 <div class="service">
                     <h3>Design + Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. </p>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.</p>
                 </div> <!-- / SERVICE -->
 
                 <div class="service">
                     <h3>E-commerence</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. </p>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.</p>
                 </div> <!-- / SERVICE -->
 
                 <div class="service">
                     <h3>WordPress</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat. </p>
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.</p>
                 </div> <!-- / SERVICE -->
             </div> <!-- / SERVICES -->
 
@@ -79,9 +81,81 @@
 
 
         <!-- ABOUT ME -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat.</p>
+            </div>
+
+            <img src="" alt="Michael doing something">
+        </section>
+
+        <!-- MY WORK -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat.</p>
+            
+            <div class="portfolio">
+                <!-- PORTFOLIO ITEM 01 -->
+                <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 02 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 03 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 04 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 05 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 06 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 07 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+
+                 <!-- PORTFOLIO ITEM 08 -->
+                 <a href="#" class="porfolio__item">
+                    <img src="" alt="Image of something I'd like to put in to show my work" class="portfolio__img">
+                </a>
+            </div>
+        </section>
 
 
-
+        <!-- FOOTER -->
+        <footer>
+            <!--Put email here-->
+            <a href="mailto:hello@test.email" class="footer-link">hello@test.email</a>
+        </footer>
     </body>
     
     
