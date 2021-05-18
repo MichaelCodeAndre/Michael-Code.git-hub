@@ -1,10 +1,12 @@
+/*The before and after code will make life much easier for me when I'm doing CSS.*/
 *,
 *::before
 *::after {
     box-sizing: border-box; /*This code changes how padding is calculated to make something within a width instead of adding to the total width.*/
 }
-/*Custom properties needs double hyphen to work correctly.*/
+/* CUSTOM PROPERTIES */
 :root {
+    /*Custom properties needs double hyphen to work correctly.*/
     /*This is where I specify which fonts I'm going to use. For this I use two, that's why there is a primary and a secondary font fundation.*/
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -19,9 +21,58 @@
     --clr-accent: #16e0bd;
 
     /*This is where I specify which font sizes I want to use for what element.*/
-    /*I'm using rem here cause the font sizes will be relative to the html font size which again will be relative to the device.*/
+    /*I specify the custom font size values here that will be the default, I will be changing these values later in a media query.*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root   {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+/* / CUSTOM PROPERTIES */
+
+/* GENERAL STYLES */
+
+body {
+    /*The var is short for variable, that's what it is called when coding in CSS*/
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs- body);
+    line-height: 1.6;
+}
+
+img {
+    display: block; /*Doing this will sometimes get rid of problems that can sometimes happen with images.*/
+    max-width: 100%; /*Makes sure that the images isn't allowed to get bigger than it should be.*/
+}
+/* / GENERAL STYLES */
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+    line-height: 1.1rem;
+    margin: 0; /*What margin does here is to decide how much space you get on the top and bottom sides of the line.*/
+}
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.section__title {
+
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
 }
