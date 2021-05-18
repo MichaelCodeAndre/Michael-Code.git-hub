@@ -22,6 +22,7 @@
 
     /*This is where I specify which font sizes I want to use for what element.*/
     /*I specify the custom font size values here that will be the default, I will be changing these values later in a media query.*/
+    /*rem is only relative to the html font-size.*/
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -54,6 +55,8 @@ img {
     display: block; /*Doing this will sometimes get rid of problems that can sometimes happen with images.*/
     max-width: 100%; /*Makes sure that the images isn't allowed to get bigger than it should be.*/
 }
+
+strong { font-weight: var(--fw-bold) }
 /* / GENERAL STYLES */
 
 /* TYPOGRAPHY */
@@ -69,10 +72,35 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 .section__title {
-
+    margin-bottom: .25em; /*em is relative to the font size instead of relative to the html font-size.*/
 }
 
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+/* / TYPOGRAPHY */
+
+/* HEADER */
+
+nav { display: none; }
+/* / HEADER */
+
+/* INTRO SECTION */
+
+.intro {
+    position: relative;
 }
