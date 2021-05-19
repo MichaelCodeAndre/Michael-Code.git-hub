@@ -188,7 +188,7 @@ nav { display: none; }
 }
 /* / INTRO SECTION */
 
-/* / MY SERVICES SECTION */
+/* MY SERVICES SECTION */
 
 .my-services {
     /*I'm using background colour as well as a background image in case the image doesn't show.*/
@@ -236,3 +236,19 @@ nav { display: none; }
         margin-left: 2em;
     }
 }
+/* /  MY SERVICES SECTION */
+
+/* ABOUT ME SECTION */
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+}
+/* / ABOUT ME SECTION */
