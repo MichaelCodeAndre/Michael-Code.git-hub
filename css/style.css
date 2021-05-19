@@ -186,4 +186,16 @@ nav { display: none; }
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
+    opacity: 0.25;
+
+}
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .service + .service {
+        margin-left: 2em;
+    }
 }
