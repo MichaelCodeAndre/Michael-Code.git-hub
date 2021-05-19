@@ -281,3 +281,10 @@ nav { display: none; }
     }
 }
 /* / ABOUT ME SECTION */
+
+/* MY WORK */
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
