@@ -173,3 +173,17 @@ nav { display: none; }
     color: var(--clr-light);
     text-align: center;
 }
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+}
