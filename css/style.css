@@ -191,6 +191,18 @@ header {
     color: var(--clr-accent);
 }
 
+/*This just removes the ugly boarder around the menu icon.*/
+.nav-toggle {
+    padding: 0.5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
 .hamburger {
     display: block;
     position: relative;
@@ -202,6 +214,8 @@ header {
     width: 2em;
     height: 3px;
     border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+
 }
 /*This is a sudo element, it will only work if you give it content. Right here I have the content empty which will still work.*/
 .hamburger::before,
@@ -212,6 +226,9 @@ header {
     right: 0;
 
 }
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
 
 /* / HEADER */
 
