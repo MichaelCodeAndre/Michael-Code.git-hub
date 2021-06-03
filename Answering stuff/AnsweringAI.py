@@ -1,4 +1,5 @@
 import tkinter as tk
+from time import *
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -18,7 +19,8 @@ class Application(tk.Frame):
         self.quit.pack(side="bottom")
 
     def say_hi(self):
-        print("hi there, everyone!")
+        print("intiating self destruct!")
+
 
 
 
@@ -55,7 +57,7 @@ class Application(tk.Frame):
 
 
         
-    def VoiceRec():
+
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
@@ -662,7 +664,6 @@ class Application(tk.Frame):
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
             #Just making something look complicated, don't look here!!#Just making something look complicated, don't look here!!
-    pass
 root = tk.Tk()
 app = Application(master=root)
 app.mainloop()
