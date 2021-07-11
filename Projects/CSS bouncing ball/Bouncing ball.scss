@@ -8,5 +8,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 50px;        //To change the size of all the different elements, change the font-size.
+}                           //Using 'em' will work as a variable since it's relative to the font-size i select within the body element.
+
+.scene {
+    position: relative;     //Makes everything relative to the scene element/easier to place and adjust.
 }
 
+.ball {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: lightblue;
+}
